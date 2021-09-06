@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - sesion06_cg_p1_mul_a</title>
+  
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<html>
+  <canvas id="dibujo" width="1600" height="1600">
+    <script>
+    function draw() {
+     var canvas = document.getElementById('dibujo');
+     if (canvas.getContext) {
+      var ctx = canvas.getContext('2d');
+       
+      //Base1
+      ctx.beginPath();
+      ctx.moveTo(40,200);
+      ctx.lineTo(120,50);
+      ctx.lineTo(200,200);
+      ctx.closePath();
+      ctx.fillStyle="#9C3823";
+      ctx.fill();
+      ctx.save();
+       
+      //acompañante1
+      ctx.beginPath();
+      ctx.moveTo(220,100);
+      ctx.lineTo(120,50);
+      ctx.lineTo(200,200);
+      ctx.fillStyle = '#525A6F';  
+      ctx.closePath();
+      ctx.fill();
+      
+      //Base2
+      ctx.beginPath();
+      ctx.moveTo(440,200);
+      ctx.lineTo(520,50);
+      ctx.lineTo(600,200);
+      ctx.closePath();
+      ctx.fillStyle="#9C3823";
+      ctx.fill();
+      ctx.save();
+      
+       //acompañante2
+      ctx.beginPath();
+      ctx.moveTo(630,100);
+      ctx.lineTo(530,50);
+      ctx.lineTo(610,200);
+      ctx.fillStyle = '#525A6F';  
+      ctx.closePath();
+      ctx.fill();
+      
+      //Base3
+      ctx.beginPath();
+      ctx.scale(0.5,0.5);
+      ctx.translate(840,200);
+      ctx.moveTo(840,200);
+      ctx.lineTo(920,50);
+      ctx.lineTo(1000,200);
+      ctx.closePath();
+      ctx.fillStyle="#9C3823";
+      ctx.fill();
+      ctx.save();
+      
+      
+       //acompañante3
+      ctx.beginPath();
+      ctx.moveTo(1020,100);
+      ctx.lineTo(920,50);
+      ctx.lineTo(1000,200);
+      ctx.fillStyle = '#525A6F';  
+      ctx.closePath();
+      ctx.fill();
+      
+
+  }
+}
+      draw();
+  </script>
+  
+</html>
+<!-- partial -->
+  
+</body>
+</html>
